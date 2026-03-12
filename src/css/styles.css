@@ -12,3 +12,11 @@
 
 /* Sections style */
 @import url('./header.css');
+
+.dark{
+  background-color: black;
+}
+
+.white{
+  background-color: white;
+}

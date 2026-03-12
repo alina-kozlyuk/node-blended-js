@@ -15,7 +15,12 @@
   </li>
 */
 
-import { onHeaderFormSubmit } from "./js/handlers";
+import { onHeaderFormSubmit, onDeleteTask, loadTasks, initTheme, onThemeToggle} from "./js/handlers";
 import { refs } from "./js/refs";
 
-refs.headerForm.addEventListener('submit', onHeaderFormSubmit)
+refs.headerForm.addEventListener('submit', onHeaderFormSubmit);
+refs.taskList.addEventListener('click', onDeleteTask);
+refs.themeToggleBtn.addEventListener('click', onThemeToggle);
+
+loadTasks();
+initTheme();
